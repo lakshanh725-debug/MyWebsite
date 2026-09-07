@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hirusha | Web Developer</title>
+
+<link rel="icon" type="image/jpeg" href="profile.jpg">
+    
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+
+<body>
+
+    <div id="loader">
+    <div class="loader-circle"></div>
+</div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home" class="logo">MyWebsite</a>
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</div>
+<button id="themeBtn" onclick="toggleTheme()">☀️</button>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+    <div class="background-shapes">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="hero-content">
+
+        <div class="hero-image">
+            <img src="profile.jpg" alt="Hirusha">
+        </div>
+
+        <div class="hero-text">
+
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+
+<div class="availability">
+    <span></span>
+    Available for Work
+</div>
+
+            <h1>
+                Hello, I'm <span id="typing"></span>
+            </h1>
+
+            <p>
+                I create modern, responsive and attractive websites
+                using HTML, CSS and JavaScript.
+            </p>
+
+            <div class="hero-buttons">
+
+    <a href="#about" class="explore-btn">
+        Explore More
+    </a>
+
+    <a href="cv.pdf" class="cv-btn" download>
+        📄 Download CV
+    </a>
+
+</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- About Section -->
+<section class="about reveal" id="about">
+
+    <div class="about-image">
+        <img src="profile.jpg" alt="My Photo">
+    </div>
+
+    <div class="about-content">
+        <p class="section-title">ABOUT ME</p>
+
+        <h2>I'm a Beginner Web Developer</h2>
+
+        <p>
+            I'm currently learning web development and building
+            modern websites using HTML, CSS and JavaScript.
+            My goal is to become a professional developer.
+        </p>
+
+        <p id="moreText" class="more-text">
+            I enjoy creating clean, modern and responsive websites.
+            I am continuously improving my skills in HTML, CSS and JavaScript
+            and working towards becoming a professional web developer.
+        </p>
+
+        <button onclick="readMore(this)">Read More</button>
+<div class="skills">
+
+    <div class="skill">
+        <div class="skill-info">
+            <span>HTML</span>
+            <span>90%</span>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-fill html"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-info">
+            <span>CSS</span>
+            <span>80%</span>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-fill css"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-info">
+            <span>JavaScript</span>
+            <span>60%</span>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-fill javascript"></div>
+        </div>
+    </div>
+
+</div>
+    </div>
+
+</section>
+
+
+<!-- Services Section -->
+<section class="services reveal" id="services">
+
+    <p class="section-title">MY SERVICES</p>
+
+
+    <h2>What I Can Do</h2>
+
+    <div class="service-container">
+
+        <div class="service-card" onclick="showService('Web Design')">
+    <div class="service-icon">🌐</div>
+    <h3>Web Design</h3>
+    <p>
+        I can create modern and attractive websites.
+    </p>
+<button class="details-btn" onclick="showService('Web Design')">
+    View Details →
+</button>
+
+</div>
+
+<div class="service-card" onclick="showService('HTML & CSS')">
+    <div class="service-icon">💻</div>
+    <h3>HTML & CSS</h3>
+    <p>
+        I can build responsive web pages using HTML and CSS.
+    </p>
+<button class="details-btn" onclick="showService('HTML & CSS')">
+    View Details →
+</button>
+
+</div>
+
+<div class="service-card" onclick="showService('JavaScript')">
+    <div class="service-icon">⚡</div>
+    <h3>JavaScript</h3>
+    <p>
+        I am learning JavaScript to make websites interactive.
+    </p>
+<button class="details-btn" onclick="showService('JavaScript')">
+    View Details →
+</button>
+
+</div>
+
+       
+
+</section>
+
+<!-- Projects Section -->
+
+<section class="projects reveal" id="projects">
+
+    <p class="section-title">MY WORK</p>
+
+    <h2>Recent Projects</h2>
+
+    <div class="project-container">
+
+        <div class="project-card">
+
+            <div class="project-image">
+                <img src="images/project1.jpg" alt="Portfolio Website">
+            </div>
+
+            <div class="project-content">
+                <h3>Modern Portfolio Website</h3>
+
+                <p>
+                    A modern responsive portfolio website built
+                    using HTML, CSS and JavaScript.
+                </p>
+
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <button class="project-btn"
+                    onclick="showProject('Portfolio Website')">
+                    View Project →
+                </button>
+            </div>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <div class="project-image">
+                <img src="images/project2.jpg" alt="Shopping Website">
+            </div>
+
+            <div class="project-content">
+                <h3>Online Shopping Website</h3>
+
+                <p>
+                    A clean and responsive online shopping
+                    website concept with modern UI.
+                </p>
+
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>UI/UX</span>
+                </div>
+
+                <button class="project-btn"
+                    onclick="showProject('Shopping Website')">
+                    View Project →
+                </button>
+            </div>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <div class="project-image">
+                <img src="images/project3.jpg" alt="Business Website">
+            </div>
+
+            <div class="project-content">
+                <h3>Business Website</h3>
+
+                <p>
+                    A professional business website designed
+                    for a modern company.
+                </p>
+
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Responsive</span>
+                </div>
+
+                <button class="project-btn"
+                    onclick="showProject('Business Website')">
+                    View Project →
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Contact Section -->
+<section class="contact reveal" id="contact">
+
+    <p class="section-title">CONTACT ME</p>
+
+    <h2>Let's Work Together</h2>
+
+    <div class="contact-info">
+
+    <a href="mailto:your@email.com" class="contact-card">
+    <div class="contact-icon">📧</div>
+    <h3>Email</h3>
+    <p>your@email.com</p>
+</a>
+
+    <a href="https://wa.me/94741582175" target="_blank" class="contact-card">
+    <div class="contact-icon">📱</div>
+    <h3>WhatsApp</h3>
+    <p>+94741582175</p>
+</a>
+
+    <a href="https://www.google.com/maps" target="_blank" class="contact-card">
+    <div class="contact-icon">📍</div>
+    <h3>Location</h3>
+    <p>Sri Lanka</p>
+</a>
+
+</div>
+
+<form onsubmit="sendWhatsApp(); return false;">
+
+    <input type="text" id="name" placeholder="Your Name" required>
+
+    <input type="email" id="email" placeholder="Your Email" required>
+
+    <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+
+<div id="successMessage" class="success-message">
+    ✅ Your message is ready to send!
+</div>
+
+</form>
+
+    <a href="https://wa.me/+9474-1582175" class="whatsapp">
+        💬 Chat on WhatsApp
+    </a>
+
+</section>
+
+<!-- Service Modal -->
+
+<div id="serviceModal" class="service-modal">
+
+    <div class="modal-content">
+
+        <button class="close-modal" onclick="closeService()">×</button>
+
+        <div id="modalIcon" class="modal-icon">🌐</div>
+
+        <h2 id="modalTitle">Web Design</h2>
+
+        <p id="modalDescription">
+            Service details will appear here.
+        </p>
+
+        <button class="modal-btn" onclick="closeService()">
+            Close
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Project Modal -->
+<div id="projectModal" class="project-modal">
+
+    <div class="project-modal-content">
+
+        <button class="close-project" onclick="closeProject()">×</button>
+
+        <div class="project-modal-icon" id="projectModalIcon">🌐</div>
+
+        <h2 id="projectModalTitle">Project Title</h2>
+
+        <p id="projectModalDescription">
+            Project details will appear here.
+        </p>
+
+        <div class="project-modal-buttons">
+            <a id="liveDemoBtn" href="#" target="_blank" class="project-live">
+                🌐 Live Demo
+            </a>
+
+            <a id="githubBtn" href="#" target="_blank" class="project-github">
+                💻 GitHub
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+<script>
+function showService(service) {
+
+    const modal = document.getElementById("serviceModal");
+    const title = document.getElementById("modalTitle");
+    const description = document.getElementById("modalDescription");
+    const icon = document.getElementById("modalIcon");
+
+    if (service === "Web Design") {
+
+        icon.textContent = "🌐";
+        title.textContent = "Web Design";
+
+        description.textContent =
+            "I can create modern, attractive and responsive websites that work smoothly on different devices.";
+
+    }
+
+    else if (service === "HTML & CSS") {
+
+        icon.textContent = "💻";
+        title.textContent = "HTML & CSS";
+
+        description.textContent =
+            "I can build clean, responsive and modern web pages using HTML and CSS.";
+
+    }
+
+    else if (service === "JavaScript") {
+
+        icon.textContent = "⚡";
+        title.textContent = "JavaScript";
+
+        description.textContent =
+            "I am learning JavaScript to make websites interactive, dynamic and user-friendly.";
+
+    }
+
+    modal.classList.add("show");
+}
+
+
+function closeService() {
+
+    document.getElementById("serviceModal")
+        .classList.remove("show");
+
+}
+</script>
+
+<script>
+const revealElements = document.querySelectorAll(".reveal");
+
+function revealOnScroll() {
+    revealElements.forEach(element => {
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 100) {
+            element.classList.add("show");
+        }
+    });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+
+revealOnScroll();
+</script>
+
+<script>
+const words = ["Hirusha", "Web Developer", "Designer"];
+let wordIndex = 0;
+let charIndex = 0;
+let deleting = false;
+
+function typeEffect() {
+    const typing = document.getElementById("typing");
+    const word = words[wordIndex];
+
+    if (!deleting) {
+        typing.textContent = word.substring(0, charIndex + 1);
+        charIndex++;
+
+        if (charIndex === word.length) {
+            deleting = true;
+            setTimeout(typeEffect, 1500);
+            return;
+        }
+    } else {
+        typing.textContent = word.substring(0, charIndex - 1);
+        charIndex--;
+
+        if (charIndex === 0) {
+            deleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+        }
+    }
+
+    setTimeout(typeEffect, deleting ? 70 : 120);
+}
+
+typeEffect();
+</script>
+
+<script>
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("show");
+}
+</script>
+
+<script>
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 150;
+
+        if (window.scrollY >= sectionTop) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+        }
+    });
+});
+</script>
+
+<button id="topBtn" onclick="scrollToTop()">⬆️</button>
+
+<script>
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 300) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+});
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+</script>
+
+<script>
+window.addEventListener("load", function () {
+    document.getElementById("loader").classList.add("hide");
+});
+</script>
+
+<script>
+function readMore(button) {
+
+    const text = document.getElementById("moreText");
+
+    text.classList.toggle("show");
+
+    if (text.classList.contains("show")) {
+        button.textContent = "Read Less";
+    } else {
+        button.textContent = "Read More";
+    }
+}
+</script>
+    
+
+<script>
+function sendWhatsApp() {
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    const successMessage =
+        document.getElementById("successMessage");
+
+    successMessage.classList.add("show");
+
+    const phoneNumber = "741582175"; 
+
+    const text =
+        "Hello!%0A%0A" +
+        "Name: " + encodeURIComponent(name) + "%0A" +
+        "Email: " + encodeURIComponent(email) + "%0A" +
+        "Message: " + encodeURIComponent(message);
+
+    const whatsappURL =
+        "https://wa.me/" + phoneNumber + "?text=" + text;
+
+    setTimeout(function () {
+        window.open(whatsappURL, "_blank");
+    }, 800);
+}
+</script>
+
+<script>
+function toggleTheme() {
+
+    document.body.classList.toggle("light-mode");
+
+    const themeBtn = document.getElementById("themeBtn");
+
+    if (document.body.classList.contains("light-mode")) {
+
+        themeBtn.textContent = "🌙";
+
+        localStorage.setItem("theme", "light");
+
+    } else {
+
+        themeBtn.textContent = "☀️";
+
+        localStorage.setItem("theme", "dark");
+    }
+}
+
+
+// Remember Theme
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "light") {
+
+    document.body.classList.add("light-mode");
+
+    document.getElementById("themeBtn").textContent = "🌙";
+}
+</script>
+
+<!-- Footer -->
+<footer>
+
+    <h2>MyWebsite</h2>
+
+    <p class="footer-text">
+        Creating modern websites with passion and creativity.
+    </p>
+
+    <div class="social-links">
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/share/1Q1jt85vcB/?mibextid=wwXIfr"
+       target="_blank"
+       aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/mr.liyng"
+       target="_blank"
+       aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <!-- TikTok -->
+    <a href="https://www.tiktok.com/@hiruwa_boy36?_r=1&_t=ZS-99WmupYZnZX"
+       target="_blank"
+       aria-label="TikTok">
+        <i class="fa-brands fa-tiktok"></i>
+    </a>
+
+</div>
+
+    <p>© 2026 MyWebsite. All Rights Reserved.</p>
+
+</footer>
+
+</html>
